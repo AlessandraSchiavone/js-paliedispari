@@ -22,7 +22,7 @@ if(parola.trim() == '' || !isNaN(parseInt(parola)) && typeof parseInt(parola) ==
     if(risultato){
         document.getElementById("messaggio").innerHTML = "La parola <span>" +parola+ "</span> è palindroma";
     }else{
-        document.getElementById("messaggio").innerHTML = "La parola <span>" +parola+ "<span> non è palindroma";
+        document.getElementById("messaggio").innerHTML = "La parola <span>" +parola+ "</span> non è palindroma";
     }
 }
 
