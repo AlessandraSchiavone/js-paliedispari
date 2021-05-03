@@ -20,9 +20,9 @@ if(parola.trim() == '' || !isNaN(parseInt(parola)) && typeof parseInt(parola) ==
     var risultato = palindroma(parola, parolaInvertita);
 
     if(risultato){
-        document.getElementById("messaggio").innerHTML = "La parola " +parola+ " è palindroma";
+        document.getElementById("messaggio").innerHTML = "La parola <span>" +parola+ "</span> è palindroma";
     }else{
-        document.getElementById("messaggio").innerHTML = "La parola " +parola+ " non è palindroma";
+        document.getElementById("messaggio").innerHTML = "La parola <span>" +parola+ "<span> non è palindroma";
     }
 }
 

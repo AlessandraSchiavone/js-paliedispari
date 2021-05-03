@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+h1{
+    color:rgb(0, 0, 136);
+    padding: 20px;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+}
+span{
+    color:rgb(94, 94, 245);
+    text-transform: uppercase;
+    text-decoration: underline;
+}
