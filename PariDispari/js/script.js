@@ -19,21 +19,22 @@ var numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5"));
 if(( numeroUtente < 1 ||  numeroUtente > 5) || (isNaN(numeroUtente)) || (scelta !="pari" && scelta!="dispari") || (scelta == "pari" && numeroUtente % 2 != 0 ) || (scelta == "dispari" && numeroUtente % 2 == 0)){
     alert("Errore!");
 }else{
-document.getElementById("numero-utente").innerHTML = "Il numero utente scelto è "+ scelta + ": "+ numeroUtente;
+document.getElementById("numero-utente").innerHTML = "Il numero utente scelto è <span>"+ scelta + "</span>: "+ numeroUtente;
 // console.log("il numero utente è:", numeroUtente);
 var num1 = 1;
 var num2 = 5;
 var numeroPc = numeriRandom(num1,num2);
 // console.log("il numero randomico è:",numeroPc);
-document.getElementById("numero-Pc").innerHTML = "Il numero randomico è:" + numeroPc;
+document.getElementById("numero-Pc").innerHTML = "Il numero randomico è: " + numeroPc;
 var somma = numeroUtente + numeroPc;
 // console.log("la somma dei numeri:",somma);
 document.getElementById("somma").innerHTML = "La somma dei numeri è:" + somma;
 var evenOdd = isEven(somma);
+
 if(evenOdd){
-    document.getElementById("somma").innerHTML = "La somma dei numeri è pari: " + somma;
+    document.getElementById("somma").innerHTML = "La somma dei numeri è <span>pari</span>: " + somma;
 }else{
-    document.getElementById("somma").innerHTML = "La somma dei numeri è dispari: " + somma;
+    document.getElementById("somma").innerHTML = "La somma dei numeri è <span>dispari</span>: " + somma;
 }
 
 // console.log(evenOdd);
